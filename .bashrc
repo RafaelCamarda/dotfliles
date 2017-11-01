@@ -1,0 +1,1 @@
+/home/rafaelcamarda/.bashrc
