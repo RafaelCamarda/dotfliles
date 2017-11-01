@@ -1,0 +1,94 @@
+# frozen_string_literal: true
+
+module CertificateIssue
+  # Internal: Knows how to order a certificate through the `Email Validation`
+  # workflow.
+  class EmailValidationWorkflow
+    include MetruxMeter
+    attr_reader :csr
+
+    # Public: Validates the user CSR and fetch the domain approvers email list.
+    #
+    # csr - A block of encoded text.
+    #
+    # Returns a `Certificate` structure with a `order_token` and a email list
+    # to proceed to next step.
+
+    def obtain_domain_approvers(csr)
+      csr_resp = GlobalSign::CSRValidation.new(csr).validates
+      @csr = csr
+
+      if csr_resp.success?
+        measure_action('valid_csr', 'valid')
+        emails_response = GlobalSign::ApproverEmails.new(
+          csr_resp.domain_name
+        ).fetch
+      else
+        measure_action('valid_csr', 'invalid')
+      end
+
+      Certificate.new(certificate_params(csr_resp, emails_response))
+    end
+
+    def place_order(certificate, customer)
+      @certificate = certificate
+      @customer = customer
+
+      if certificate.valid?(:place_order)
+        run_command!
+        true
+      end
+    end
+
+    private
+
+    attr_reader :customer, :certificate
+
+    def csr_data
+      @csr_decoded ||= OpenSSLRequestAdapter.new(csr).decoded_csr
+      return {} if @csr_decoded.blank?
+      {
+        country: @csr_decoded.country,
+        state: @csr_decoded.state,
+        city: @csr_decoded.city,
+        organization: @csr_decoded.organization,
+        organization_unit: @csr_decoded.organization_unit
+      }
+    end
+
+    def certificate_params(csr_resp, emails_response)
+      {
+        csr: csr,
+        domain_name: csr_resp.domain_name,
+        order_token: emails_response&.order_token,
+        emails_available: emails_response&.emails,
+        error_message: csr_resp.error_message || emails_response&.error_message,
+        success: csr_resp.success? && emails_response&.success?
+      }.merge(csr_data)
+    end
+
+    def run_command!
+      BundlerBuilder.new(configs).save
+    end
+    # rubocop:disable AbcSize
+
+    def configs
+      {
+        action: 'activate',
+        customer_login: customer.login,
+        plan_id: PlanAvailability.new.call(customer.login).id,
+        feature_definition_key: 'order_alpha_ssl_certificate',
+        feature_config: {
+          csr: certificate.csr,
+          order_token: certificate.order_token,
+          approver_email: certificate.approver_email,
+          contact_first_name: customer.first_name,
+          contact_last_name: customer.last_name,
+          contact_email: certificate.delivery_email,
+          contact_phone: customer.phone
+        }
+      }
+    end
+    # rubocop:enable AbcSize
+  end
+end

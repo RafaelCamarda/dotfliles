@@ -1,0 +1,35 @@
+class CSRDataDecoder
+  attr_reader :csr_data
+
+  KEYS = {
+    'C'  => 'country',
+    'ST' => 'state',
+    'L'  => 'city',
+    'O'  => 'organization',
+    'OU' => 'organization_unit',
+    'CN' => 'common_name',
+    'emailAddress' => 'email'
+  }.freeze
+
+  def initialize(csr_data)
+    @csr_data = csr_data
+    fetch_params
+  end
+
+  def decode
+    @decode ||= split_params.reject(&:blank?).to_h
+  end
+
+  private
+
+  def fetch_params
+    KEYS.each do |k, v|
+      instance_variable_set("@#{v}", decode[k])
+      CSRDataDecoder.class_eval("attr_reader :#{v}")
+    end
+  end
+
+  def split_params
+    csr_data.split('/').map { |v| v.split('=') }
+  end
+end
