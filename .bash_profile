@@ -1,1 +1,0 @@
-/home/rafaelcamarda/.bash_profile
