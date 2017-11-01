@@ -1,0 +1,293 @@
+pt-br:
+  manual_installation:
+    validates_csr:
+      form:
+        modal_title: 'Solicitar Geração de CSR'
+        input_csr:
+          label: 'Informações CSR (Certificate Signing Request)'
+          error: 'CSR obrigatório'
+          hint_html: 'Forneça o CSR completo no campo abaixo. <a href="https://wiki.locaweb.com.br/pt-br/SSL" target="_blank">Saiba como</a>.'
+        submit_csr:
+          label: 'Verificar'
+          disable_with: 'Validando...'
+        open_ticket:
+          label: 'Abrir Chamado'
+      form_ticket:
+        disable_with: 'Enviando...'
+        modal_cancel: 'Cancelar'
+        error_message: 'Houve um erro ao tentar abrir o chamado. Por favor,
+          tente mais tarde.'
+        input_approver_email:
+          label_html: 'E-mail do Aprovador da emissão <a href="#"
+            class="ls-ico-help" data-trigger="hover"
+            data-ls-module="popover"
+            data-content="
+              O Email aprovador é necessário para garantir que quem está
+              solicitando o SSL realmente é quem possui a propriedade do
+              domínio.Este e-mail deve seguir um dos formatos abaixo. É nesse
+              endereço que você receberá uma mensagem para aprovar a emissão
+              do certificado. Caso não tenha, é necessário a criação para
+              seguir no proccesso."></a>'
+          hint: 'Onde será enviada a aprovação do certificado'
+        input_delivery_email:
+          label_html: 'E-mail pra receber o certificado SSL <a href="#"
+            class="ls-ico-help" data-trigger="hover"
+            data-ls-module="popover"
+            data-content="
+              É nesse endereço que você receberá o certificado emitido após a
+              aprovação pelo pgit rm --cached directoryroprietário/administrador do domínio, no e-mail
+              aprovador."></a>'
+          hint: 'Onde será enviado o SSL'
+        input_domain:
+          label: 'Domínio'
+        input_department:
+          label: 'Departamento'
+        input_company:
+          label: 'Empresa'
+        input_city:
+          label: 'Cidade'
+        input_state:
+          label: 'Estado'
+        input_country:
+          label: 'País'
+        personal_site: 'O SSL é para um site pessoal ou blog'
+  installations:
+    install:
+      windows_2008:
+        success: 'Sucesso! Criaremos um chamado e entraremos em contato em breve'
+      success: 'Sucesso! Em breve o certificado será instalado no site %{domain}'
+      error: 'Erro ao solicitar instalação. Verifique os parâmetros inseridos.'
+    form:
+      form_title: 'Preencha os dados abaixo para instalar o certificado.'
+      hint: '*Ambientes suportados no momento: Windows 2012.'
+      input_order_token:
+        label: 'Order Token'
+      input_host:
+        label: 'Host'
+      input_platform:
+        label: 'Plataforma'
+      input_ftp_user:
+        label: 'Usuário FTP'
+      input_local_path:
+        label: 'Caminho Físico (path)'
+      input_domain:
+        label: 'Domínio'
+      input_pk:
+        label: 'Chave Privada (PK)'
+      input_domain_resource_id:
+        label: 'Domain ID (Windows 2012)'
+      input_site_resource_id:
+        label: 'Site ID (Windows 2012)'
+      submit_button:
+        text: 'Instalar Certificado'
+        disable_with: 'Enviando...'
+
+  certificate_status:
+    '99': 'Certificado não emitido pelo painel. Informações indisponíveis'
+    '0': 'Estamos processando a solicitação de seu certificado e
+            em breve estará disponível'
+    '1': 'Aguardando aprovação'
+    '4': 'Emitido'
+    '3': 'Cancelado na aprovação'
+    '5': 'Cancelado na emissão'
+    '100': '--'
+  global_sign:
+    error_messages:
+      '-4007':
+        title: 'Chave de criptografia fraca'
+        message: 'O CSR foi gerado com chave de %{key_generated_length} bits. 
+        Para que seja gerado seu certicado, o mínimo permitido para o tamanho 
+        da chave é %{key_required_length}. Por favor, gere um novo CSR e insira 
+        novamente.'
+      '-102':
+        title: 'Parâmetro obrigatório não encontrado'
+        message: 'Algum parâmetro obrigatório não foi inserido no CSR. Verifique 
+        as informações e gere novamente seu CSR.'
+      '-101': &101
+        title: 'Parâmetro com formato incorreto'
+        message: 'Um dos campos informados no CSR possui informação
+        inválida ou com formato incorreto.'
+      '-104': *101
+      '-5001':
+        title: 'Blacklist'
+        message: 'O CSR inserido possui informações que necessitam de
+        validações manuais e por isso o SSL não pode ser gerado automaticamente.
+        Por favor, <a href="#" id="error-modal-link" data-ls-module="modal"
+        data-target="#ticket-modal">abra um chamado para nosso suporte.</a>'
+      '-103':
+        title: 'Comprimento inválido'
+        message: 'Um dos campos informados no CSR possui comprimento além
+        do permitido.'
+      '-42':
+        title: 'Organização não encontrada'
+        message: 'O CSR inserido não contém uma organização. Adicione uma 
+        organização ao gerar o CSR e insira novamente.'
+      '-43':
+        title: 'Palavra de desafio inserida'
+        message: 'O CSR inserido contém uma palavra de desafio (senha) o que 
+        impossibilita a emissão. Gere um novo CSR sem essa informação e 
+        verifique novamente.'
+      '-44':
+        title: 'Domínio Inválido'
+        message: 'O Domínio inserido é inválido. Por favor, gere 
+        um novo CSR com um domínio válido e insira novamente'
+      '-45':
+        title: 'Endereço Inválido'
+        message: 'O CSR inserido não possui algum dos campos de endereço: País,
+        Estado ou Cidade. Verifique seu CSR e insira novamente.'
+      general_error: 'Não conseguimos processar sua solicitação. Verifique se o
+      seu domínio no CSR foi inserido corretamente ou se seu arquivo CSR foi
+      gerado com criptografia RSA. Em caso de dúvida, <a href="#"
+      id="error-modal-link" data-ls-module="modal" data-target="#ticket-modal">
+      abra um chamado para nosso suporte.</a>'
+
+  certificates:
+    types:
+      alpha: 'SSL Alpha'
+    certificate_unavailable:
+      title: 'Você não tem certificados para emitir'
+      no_more_title: 'Você já emitiu todos os seus certificados'
+      buy_paragraph: 'Deixe seus sites seguros com a contratação de certificados SSL.'
+      buy_more_paragraph: 'Para deixar mais sites seguros, contrate novos certificados SSL.'
+      buy_more_btn: 'Contrate'
+      support_paragraph: 'Ainda tem dúvidas? Fale com o suporte.'
+      support_btn: 'Fale com o Suporte'
+    list_inconsistent_item:
+      messages:
+        order_not_found: 'Erro ao obter informações do certificado'
+    list_item:
+      labels:
+        product: 'Produto'
+        status: 'Status'
+        expiration_date: 'Data de Expiração'
+    form_install:
+      private_key: 'Chave Privada'
+    modal_legacy:
+      body_html: '<p>No momento não foi possível instalar seu certificado SSL.
+      Mas não se preocupe, dentro de instantes abriremos um chamado para que
+      esse problema seja resolvido.</p><p> Em breve entraremos em contato com
+      você para que seu site fique seguro.</p><p> Caso tenha alguma dúvida,
+      acesse nossa <a href="%{customer_central_url}" target="_blank">central de
+      atendimento</a> e acompanhe seus chamados pela central do cliente.</p>'
+    modal_install:
+      body_html: '<p>Para prosseguir com a instalação de seu certificado,
+      insira a chave privada utilizada na geração do seu CSR.</p><p> Caso nosso
+      suporte tenha feito isso por você, veja no histórico de seu chamado e
+      insira aqui.</p>'
+      disable_with: 'Enviando...'
+      install_btn: 'Instalar'
+      cancel_btn: 'Cancelar'
+    modal_success:
+      body_html: '<p>A instalação de seu certificado SSL ocorreu com sucesso.</p>
+      <p>Dentro de alguns instantes seu site ficará seguro.</p>
+      <p>Caso tenha alguma dúvida, acesse nossa central de atendimento.</p>'
+    modal_error:
+      body_html: '<p>Por um dos motivos abaixo você não pode instalar o seu certificado SSL.</p>
+      <br/><ol><li>Caso seu site não esteja hospedado na Locaweb, é necessário
+      que você instale manualmente em seu servidor. Para isso, utilize o
+      certificado que recebeu por e-mail da Globalsign.</li><li>Se deseja
+      instalar aqui na Locaweb, certifique-se que seu site esteja
+      <a class="ls-color-theme" href="%{hosting_panel_url}"
+      target="_blank">configurado no Painel da Hospedagem</a>. Caso tenha que
+      configurar, crie um novo site com o mesmo domínio que deseja deixar seguro.
+      </li></ol><p> Caso tenha alguma dúvida, acesse nossa
+      <a href="%{customer_central_url}" target="_blank">
+      central de atendimento</a>.</p>'
+    index:
+      modal:
+        title: 'Insira a chave privada de seu certificado'
+        success_title: 'Seu certificado será instalado em breve!'
+        error_title: 'Não é possível instalar seu certificado SSL'
+      order_btn: 'Solicitar Emissão'
+      unavailable_cert: 'Você não tem certificados disponíveis'
+      certificates_count:
+        one: 'Você possui <b>1 certificado SSL</b> disponível'
+        other: 'Você possui <b>%{count} certificados SSL</b> disponíveis'
+      certificates_count_aux:
+        zero: ''
+        one: 'Você tem 1 certificado SSL disponível para emissão. 
+        Emita o certificado para deixar seus sites seguros.'
+        other: 'Você tem %{count} certificados SSL disponíveis para emissão. 
+        Emita o certificado para deixar seus sites seguros.'
+      ordered:
+        zero:
+          one_purchased: 'Você não solicitou seu certificado contratado'
+          other: 'Você não solicitou nenhum de seus %{count} certificados contratados'
+        one: '1 solicitado'
+        other: '%{count} solicitados'
+      purchased:
+        one: '1 contratado'
+        other: '%{count} contratados'
+    form:
+      csr_info:
+        csr_data: 'Dados informados no CSR'
+        check_csr_data: 'Atenção! Confira as informações do seu Certificado pois não
+        poderão ser modificadas após a emissão.'
+        domain: 'Domínio:'
+        domain_hint: 'Atenção! A cobertura da proteção é apenas para o domínio
+        informado (não inclui subdomínios)'
+        organization: 'Empresa:'
+        organization_unit: 'Departamento:'
+        country: 'País:'
+        state: 'Estado:'
+        city: 'Cidade:'
+
+  suba_ticket:
+    support_ticket_source: 'HelpDesk'
+    support_ticket_queue: 'SSL Locaweb'
+    support_ticket_subject: '[SSL] Emissão de certificado'
+    support_ticket_category: 'Informação'
+    support_ticket_content_html: |
+      Olá,
+
+      Você contratou um SSL Locaweb e agora faremos a emissão do certificado.
+      Para a emissão, estamos gerando o arquivo CSR com as informações abaixo:
+
+      Country Name: %{country}
+      State or Province Name: %{state}
+      Locality Name: %{city}
+      Organization: %{company}
+      Organizational Unit: %{department}
+      Common Name: %{domain}
+      E-mail do aprovador da emissão do certificado: %{approver_email}
+      E-mail para receber o certificado gerado: %{delivery_email}
+
+      Você receberá um email de aprovação, conténdo um link que DEVE ser
+      seguido e o botão EU APROVO que deve ser clicado antes da emissão do
+      certificado. Quando aprovar o requerimento do certificado, o certificado
+      será emitido e enviado para o email solicitado.
+
+      Assim que aprovado, por favor nos informe nesse chamado.
+  suba_ticket_installation:
+    support_ticket_source: 'HelpDesk'
+    support_ticket_queue: 'SSL Locaweb'
+    support_ticket_subject: '[SSL] Instalação de certificado'
+    support_ticket_category: 'Informação'
+    support_ticket_content_html: |
+      Olá,
+
+      Você solicitou a instalação do  SSL Locaweb e agora faremos a instalação do certificado.
+      Para a instalação, estamos utilizando os dados informados abaixo:
+
+      Host: %{host}
+      Plataforma: %{platform}
+      Usuário FTP: %{ftp_user}
+      Local Path: %{local_path}
+      Domínio: %{domain}
+
+  errors:
+    messages:
+      blank: "não pode ser branco"
+
+  paginate:
+    show: 'Exibir'
+    per_page: 'itens por página'
+
+  views:
+    pagination:
+      first: "Primeira"
+      last: "Última"
+      previous: "Anterior"
+      next: "Próxima"
+      truncate: "..."
+
