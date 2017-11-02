@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "sass-mode" "sass-mode.el" (22990 29472 996903
-;;;;;;  122000))
-;;; Generated autoloads from sass-mode.el
+;;;### (autoloads nil "sass-mode" "../../../../.emacs.d/elpa/sass-mode-20161006.2326/sass-mode.el"
+;;;;;;  "8318634c900bddc965bf6156b6bac1f4")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/sass-mode-20161006.2326/sass-mode.el
 
 (autoload 'sass-mode "sass-mode" "\
 Major mode for editing Sass files.
@@ -15,6 +15,12 @@ Major mode for editing Sass files.
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist '("\\.sass\\'" . sass-mode))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/sass-mode-20161006.2326/sass-mode-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/sass-mode-20161006.2326/sass-mode.el")
+;;;;;;  (23035 9267 515595 653000))
 
 ;;;***
 

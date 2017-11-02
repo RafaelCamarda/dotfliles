@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "flyspell-correct" "flyspell-correct.el" (22990
-;;;;;;  36720 972252 873000))
-;;; Generated autoloads from flyspell-correct.el
+;;;### (autoloads nil "flyspell-correct" "../../../../.emacs.d/elpa/flyspell-correct-20170213.700/flyspell-correct.el"
+;;;;;;  "49ef0e2b7902afd3eff39bd250db26e2")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/flyspell-correct-20170213.700/flyspell-correct.el
 
 (autoload 'flyspell-correct-word-generic "flyspell-correct" "\
 Correct word before point using `flyspell-correct-interface'.
@@ -44,8 +44,11 @@ https://github.com/syl20bnr/spacemacs/issues/6209#issuecomment-274320376
 
 ;;;***
 
-;;;### (autoloads nil nil ("flyspell-correct-ido.el" "flyspell-correct-pkg.el")
-;;;;;;  (22990 36721 96252 787000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/flyspell-correct-20170213.700/flyspell-correct-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/flyspell-correct-20170213.700/flyspell-correct-ido.el"
+;;;;;;  "../../../../.emacs.d/elpa/flyspell-correct-20170213.700/flyspell-correct-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/flyspell-correct-20170213.700/flyspell-correct.el")
+;;;;;;  (23035 9234 617552 608000))
 
 ;;;***
 

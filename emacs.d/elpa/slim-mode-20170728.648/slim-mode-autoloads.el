@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "slim-mode" "slim-mode.el" (22990 29475 96905
-;;;;;;  375000))
-;;; Generated autoloads from slim-mode.el
+;;;### (autoloads nil "slim-mode" "../../../../.emacs.d/elpa/slim-mode-20170728.648/slim-mode.el"
+;;;;;;  "f9557b537725e0e19e2c345704224956")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/slim-mode-20170728.648/slim-mode.el
 
 (autoload 'slim-mode "slim-mode" "\
 Major mode for editing Slim files.
@@ -15,6 +15,12 @@ Major mode for editing Slim files.
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist '("\\.slim\\'" . slim-mode))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/slim-mode-20170728.648/slim-mode-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/slim-mode-20170728.648/slim-mode.el")
+;;;;;;  (23035 9268 715671 14000))
 
 ;;;***
 

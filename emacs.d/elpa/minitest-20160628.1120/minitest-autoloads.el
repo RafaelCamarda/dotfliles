@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "minitest" "minitest.el" (22989 26371 971304
-;;;;;;  894000))
-;;; Generated autoloads from minitest.el
+;;;### (autoloads nil "minitest" "../../../../.emacs.d/elpa/minitest-20160628.1120/minitest.el"
+;;;;;;  "d88da82344d946238673d45edc968d1f")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/minitest-20160628.1120/minitest.el
 
 (autoload 'minitest-mode "minitest" "\
 Minor mode for *_test (minitest) files
@@ -21,8 +21,10 @@ Minor mode for *_test (minitest) files
 
 ;;;***
 
-;;;### (autoloads nil nil ("minitest-pkg.el") (22989 26371 927304
-;;;;;;  800000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/minitest-20160628.1120/minitest-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/minitest-20160628.1120/minitest-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/minitest-20160628.1120/minitest.el")
+;;;;;;  (23035 9257 910994 570000))
 
 ;;;***
 

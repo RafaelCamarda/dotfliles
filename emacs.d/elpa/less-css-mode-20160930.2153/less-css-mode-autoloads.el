@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "less-css-mode" "less-css-mode.el" (22990 29471
-;;;;;;  296901 299000))
-;;; Generated autoloads from less-css-mode.el
+;;;### (autoloads nil "less-css-mode" "../../../../.emacs.d/elpa/less-css-mode-20160930.2153/less-css-mode.el"
+;;;;;;  "fc8f62064c75f97b37891855be168a4a")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/less-css-mode-20160930.2153/less-css-mode.el
 
 (defvar less-css-lessc-command "lessc" "\
 Command used to compile LESS files.
@@ -75,6 +75,12 @@ Special commands:
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist '("\\.less\\'" . less-css-mode))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/less-css-mode-20160930.2153/less-css-mode-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/less-css-mode-20160930.2153/less-css-mode.el")
+;;;;;;  (23035 9252 306645 557000))
 
 ;;;***
 

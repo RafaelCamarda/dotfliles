@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "emmet-mode" "emmet-mode.el" (22990 29467 696897
-;;;;;;  450000))
-;;; Generated autoloads from emmet-mode.el
+;;;### (autoloads nil "emmet-mode" "../../../../.emacs.d/elpa/emmet-mode-20161113.2158/emmet-mode.el"
+;;;;;;  "fb9af3337b50e7951349d62db4fd58f7")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/emmet-mode-20161113.2158/emmet-mode.el
 
 (autoload 'emmet-expand-line "emmet-mode" "\
 Replace the current line's emmet expression with the corresponding expansion.
@@ -67,6 +67,12 @@ Wrap region with markup.
 
 
 \(fn COUNT)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/emmet-mode-20161113.2158/emmet-mode-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/emmet-mode-20161113.2158/emmet-mode.el")
+;;;;;;  (23035 9224 520934 936000))
 
 ;;;***
 

@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "orgit" "orgit.el" (22990 32079 678997 896000))
-;;; Generated autoloads from orgit.el
+;;;### (autoloads nil "orgit" "../../../../.emacs.d/elpa/orgit-20170731.1003/orgit.el"
+;;;;;;  "ba80f09a38fdf93fb93421022b2c0201")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/orgit-20170731.1003/orgit.el
 
 (autoload 'orgit-link-set-parameters "orgit" "\
 
@@ -78,6 +79,12 @@ points at the revision, if any.
 
 
 \(fn &optional ARG)" nil nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/orgit-20170731.1003/orgit-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/orgit-20170731.1003/orgit.el")
+;;;;;;  (23035 9258 439027 525000))
 
 ;;;***
 

@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "projectile-rails" "projectile-rails.el" (22990
-;;;;;;  37019 56239 734000))
-;;; Generated autoloads from projectile-rails.el
+;;;### (autoloads nil "projectile-rails" "../../../../.emacs.d/elpa/projectile-rails-20170901.47/projectile-rails.el"
+;;;;;;  "215145999a7c5e8a4926a2d97367a699")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/projectile-rails-20170901.47/projectile-rails.el
 
 (autoload 'projectile-rails-mode "projectile-rails" "\
 Rails mode based on projectile
@@ -38,6 +38,12 @@ Projectile-Rails mode is enabled in all buffers where
 See `projectile-rails-mode' for more information on Projectile-Rails mode.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/projectile-rails-20170901.47/projectile-rails-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/projectile-rails-20170901.47/projectile-rails.el")
+;;;;;;  (23035 9261 15188 437000))
 
 ;;;***
 

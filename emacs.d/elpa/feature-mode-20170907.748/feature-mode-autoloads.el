@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "feature-mode" "feature-mode.el" (22990 36715
-;;;;;;  392256 870000))
-;;; Generated autoloads from feature-mode.el
+;;;### (autoloads nil "feature-mode" "../../../../.emacs.d/elpa/feature-mode-20170907.748/feature-mode.el"
+;;;;;;  "46966ffa79e3a908a4cae0f26e0a22da")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/feature-mode-20170907.748/feature-mode.el
 
 (autoload 'feature-mode "feature-mode" "\
 Major mode for editing plain text stories
@@ -16,8 +16,10 @@ Major mode for editing plain text stories
 
 ;;;***
 
-;;;### (autoloads nil nil ("feature-mode-pkg.el") (22990 36715 480256
-;;;;;;  805000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/feature-mode-20170907.748/feature-mode-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/feature-mode-20170907.748/feature-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/feature-mode-20170907.748/feature-mode.el")
+;;;;;;  (23035 9230 949327 665000))
 
 ;;;***
 

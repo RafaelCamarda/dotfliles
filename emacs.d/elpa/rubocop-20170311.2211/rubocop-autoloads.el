@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "rubocop" "rubocop.el" (22989 26380 899324
-;;;;;;  205000))
-;;; Generated autoloads from rubocop.el
+;;;### (autoloads nil "rubocop" "../../../../.emacs.d/elpa/rubocop-20170311.2211/rubocop.el"
+;;;;;;  "d7f3d58e061163a40e4ecee7a19af650")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/rubocop-20170311.2211/rubocop.el
 
 (autoload 'rubocop-check-project "rubocop" "\
 Run check on current project.
@@ -43,6 +43,12 @@ Run autocorrect on current file.
 Minor mode to interface with RuboCop.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/rubocop-20170311.2211/rubocop-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/rubocop-20170311.2211/rubocop.el")
+;;;;;;  (23035 9265 19439 85000))
 
 ;;;***
 

@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "helm-css-scss" "helm-css-scss.el" (22990 29470
-;;;;;;  364900 302000))
-;;; Generated autoloads from helm-css-scss.el
+;;;### (autoloads nil "helm-css-scss" "../../../../.emacs.d/elpa/helm-css-scss-20140626.1725/helm-css-scss.el"
+;;;;;;  "6121fec25745ae0027dc4370b72d517b")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/helm-css-scss-20140626.1725/helm-css-scss.el
 
 (autoload 'helm-css-scss-insert-close-comment "helm-css-scss" "\
 
@@ -26,6 +26,12 @@
 
 
 \(fn &optional $QUERY)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/helm-css-scss-20140626.1725/helm-css-scss-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/helm-css-scss-20140626.1725/helm-css-scss.el")
+;;;;;;  (23035 9241 629984 273000))
 
 ;;;***
 

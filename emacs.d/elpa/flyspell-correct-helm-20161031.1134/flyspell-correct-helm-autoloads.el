@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("flyspell-correct-helm.el") (22990 36721
-;;;;;;  980252 169000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/flyspell-correct-helm-20161031.1134/flyspell-correct-helm-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/flyspell-correct-helm-20161031.1134/flyspell-correct-helm.el")
+;;;;;;  (23035 9235 97582 82000))
 
 ;;;***
 

@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "tagedit" "tagedit.el" (22990 29476 348906
-;;;;;;  719000))
-;;; Generated autoloads from tagedit.el
+;;;### (autoloads nil "tagedit" "../../../../.emacs.d/elpa/tagedit-20161121.55/tagedit.el"
+;;;;;;  "c74cfd2daeed6833272413bccffc82fc")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/tagedit-20161121.55/tagedit.el
 
 (autoload 'tagedit-add-paredit-like-keybindings "tagedit" "\
 
@@ -111,6 +111,12 @@ Goto start of content within current tag.
 
 
 \(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/tagedit-20161121.55/tagedit-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/tagedit-20161121.55/tagedit.el")
+;;;;;;  (23035 9270 119759 256000))
 
 ;;;***
 

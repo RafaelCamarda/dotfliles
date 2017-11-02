@@ -325,6 +325,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
    (quote
     ("c4bd8fa17f1f1fc088a1153ca676b1e6abc55005e72809ad3aeffb74bd121d23" default)))
  '(emmet-indentation 2)
+ '(evil-want-Y-yank-to-eol nil)
  '(indent-tabs-mode nil)
  '(js-indent-level 2)
  '(package-selected-packages

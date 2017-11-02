@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "bundler" "bundler.el" (22989 26370 191301
-;;;;;;  40000))
-;;; Generated autoloads from bundler.el
+;;;### (autoloads nil "bundler" "../../../../.emacs.d/elpa/bundler-20160815.215/bundler.el"
+;;;;;;  "1899378ed99e424e5d1cabc5b77541a4")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/bundler-20160815.215/bundler.el
 
 (autoload 'bundle-open "bundler" "\
 Queries for a gem name and opens the location of the gem in dired.
@@ -56,6 +56,12 @@ Shows all gems that are part of the bundle, or the path to a given gem.
 Prints version information.
 
 \(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/bundler-20160815.215/bundler-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/bundler-20160815.215/bundler.el")
+;;;;;;  (23035 9214 296 307000))
 
 ;;;***
 

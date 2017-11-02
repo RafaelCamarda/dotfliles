@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "helm-c-yasnippet" "helm-c-yasnippet.el" (23015
-;;;;;;  21755 458173 883000))
-;;; Generated autoloads from helm-c-yasnippet.el
+;;;### (autoloads nil "helm-c-yasnippet" "../../../../.emacs.d/elpa/helm-c-yasnippet-20170128.742/helm-c-yasnippet.el"
+;;;;;;  "c9bc9d03cd3ed07f7e40bf2508f87c54")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/helm-c-yasnippet-20170128.742/helm-c-yasnippet.el
 
 (autoload 'helm-yas-complete "helm-c-yasnippet" "\
 List of yasnippet snippets using `helm' interface.
@@ -21,6 +21,12 @@ List of yasnippet snippet files
 Create a snippet from region.
 
 \(fn &optional START END FILE-NAME)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/helm-c-yasnippet-20170128.742/helm-c-yasnippet-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/helm-c-yasnippet-20170128.742/helm-c-yasnippet.el")
+;;;;;;  (23035 9240 237898 409000))
 
 ;;;***
 

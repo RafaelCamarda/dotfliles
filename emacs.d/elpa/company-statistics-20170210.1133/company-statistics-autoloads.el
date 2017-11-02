@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "company-statistics" "company-statistics.el"
-;;;;;;  (23015 21730 754083 698000))
-;;; Generated autoloads from company-statistics.el
+;;;### (autoloads nil "company-statistics" "../../../../.emacs.d/elpa/company-statistics-20170210.1133/company-statistics.el"
+;;;;;;  "858eaf65a94d525435823fd42caa8fe4")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/company-statistics-20170210.1133/company-statistics.el
 
 (defvar company-statistics-mode nil "\
 Non-nil if Company-Statistics mode is enabled.
@@ -29,6 +29,12 @@ configuration.  You can customize this behavior with
 `company-statistics-file'.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/company-statistics-20170210.1133/company-statistics-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/company-statistics-20170210.1133/company-statistics.el")
+;;;;;;  (23035 9217 700520 338000))
 
 ;;;***
 

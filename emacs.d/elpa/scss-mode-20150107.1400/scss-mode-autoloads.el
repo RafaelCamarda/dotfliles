@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "scss-mode" "scss-mode.el" (22990 29473 948904
-;;;;;;  142000))
-;;; Generated autoloads from scss-mode.el
+;;;### (autoloads nil "scss-mode" "../../../../.emacs.d/elpa/scss-mode-20150107.1400/scss-mode.el"
+;;;;;;  "153f7320dbb7fe420f0c1bcd56de3575")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/scss-mode-20150107.1400/scss-mode.el
 
 (autoload 'scss-mode "scss-mode" "\
 Major mode for editing SCSS files, http://sass-lang.com/
@@ -15,6 +15,12 @@ Special commands:
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/scss-mode-20150107.1400/scss-mode-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/scss-mode-20150107.1400/scss-mode.el")
+;;;;;;  (23035 9268 127634 74000))
 
 ;;;***
 

@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "inflections" "inflections.el" (22990 36722
-;;;;;;  852251 565000))
-;;; Generated autoloads from inflections.el
+;;;### (autoloads nil "inflections" "../../../../.emacs.d/elpa/inflections-20170913.216/inflections.el"
+;;;;;;  "189e0e9a12d9b3ee221d01e1fbc354dd")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/inflections-20170913.216/inflections.el
 
 (autoload 'inflection-singularize-string "inflections" "\
 Return the singularized version of STR.
@@ -20,6 +20,12 @@ Return the pluralized version of STR.
 \(fn STR)" nil nil)
 
 (define-obsolete-function-alias 'pluralize-string 'inflection-pluralize-string)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/inflections-20170913.216/inflections-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/inflections-20170913.216/inflections.el")
+;;;;;;  (23035 9259 131070 720000))
 
 ;;;***
 

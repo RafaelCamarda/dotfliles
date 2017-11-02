@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "rake" "rake.el" (22989 26375 599312 746000))
-;;; Generated autoloads from rake.el
+;;;### (autoloads nil "rake" "../../../../.emacs.d/elpa/rake-20170921.801/rake.el"
+;;;;;;  "52993cfdf96351e5c3b637cc402f2b50")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/rake-20170921.801/rake.el
 
 (autoload 'rake-compile "rake" "\
 Runs TASK-NAME from the directory returned by `rake--root'.
@@ -32,6 +33,12 @@ Finds a rake task.
 Runs rake command.
 
 \(fn ARG &optional COMPILATION-MODE)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/rake-20170921.801/rake-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/rake-20170921.801/rake.el") (23035
+;;;;;;  9259 715107 199000))
 
 ;;;***
 

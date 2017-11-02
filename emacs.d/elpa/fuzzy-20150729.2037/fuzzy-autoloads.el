@@ -3,7 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("fuzzy.el") (23015 21754 678170 991000))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/fuzzy-20150729.2037/fuzzy-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/fuzzy-20150729.2037/fuzzy.el")
+;;;;;;  (23035 9235 597612 804000))
 
 ;;;***
 
