@@ -1,1 +1,0 @@
-/home/rafael/ambientes_locais/dotfliles/emacs.d
