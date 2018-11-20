@@ -1,7 +1,7 @@
 [color]
 ui = auto
 [user]
-email = rafael.camarda@locaweb.com.br
+email = rf.camarda@gmail.com
 name = Rafael Camarda
 
 [color "status"]
@@ -25,3 +25,4 @@ editor = vi
 
 [github]
 user = rafaelcamarda
+email = rf.camarda@gmail.com
