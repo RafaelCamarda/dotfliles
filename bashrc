@@ -148,3 +148,9 @@ function _prompt_command() {
     PS1="\[\033[01;32m\]\u@\h:\[\033[01;34m\]\W\[\033[31m\] \[\033[m\]`_git_prompt`$ "
 }
 PROMPT_COMMAND=_prompt_command
+
+if ps -o cmd= -p $(ps -o ppid= -p $$) | grep -q gnome; then
+  nohup terminator &> /dev/null &
+  sleep 0.1s
+  exit
+fi
