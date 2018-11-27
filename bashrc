@@ -154,3 +154,7 @@ if ps -o cmd= -p $(ps -o ppid= -p $$) | grep -q gnome; then
   sleep 0.1s
   exit
 fi
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
