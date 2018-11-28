@@ -158,3 +158,5 @@ fi
 . $HOME/.asdf/asdf.sh
 
 . $HOME/.asdf/completions/asdf.bash
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
