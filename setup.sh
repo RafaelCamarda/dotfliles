@@ -18,6 +18,9 @@ echo -e "\e[0;Instaling fzf..."
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
+echo -e "\e[0;Instaling httpie..."
+sudo apt-get install httpie
+
 echo -e "\e[0;Instaling fonts..."
 
 FONT_NAME="SourceCodePro"
