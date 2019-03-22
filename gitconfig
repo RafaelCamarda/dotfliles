@@ -4,6 +4,7 @@ ui = auto
 email = rf.camarda@gmail.com
 name = Rafael Camarda
 
+
 [color "status"]
 changed = yellow
 added = green
