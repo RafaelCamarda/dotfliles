@@ -9,7 +9,7 @@ ln -sf "${__ROOT__}/bash_profile" "${HOME}/.bash_profile"
 ln -sf "${__ROOT__}/bashrc" "${HOME}/.bashrc"
 ln -sf "${__ROOT__}/profile" "${HOME}/.profile"
 ln -sf "${__ROOT__}/gitconfig" "${HOME}/.gitconfig"
-ln -sf "${__ROOT__}/spacemacs" "${HOME}/.spacemacs"
+#ln -sf "${__ROOT__}/spacemacs" "${HOME}/.spacemacs"
 ln -sf "${__ROOT__}/config_terminator" "${HOME}/.config/terminator/config"
 
 echo -e "\e[0;Instaling fzf..."
