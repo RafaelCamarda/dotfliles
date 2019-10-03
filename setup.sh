@@ -5,7 +5,6 @@ echo -e "\e[0;32mCreating links..."
 
 __ROOT__=$(pwd)
 
-ln -sf "${__ROOT__}/emacs.d" "${HOME}/.emacs.d"
 ln -sf "${__ROOT__}/bash_profile" "${HOME}/.bash_profile"
 ln -sf "${__ROOT__}/bashrc" "${HOME}/.bashrc"
 ln -sf "${__ROOT__}/profile" "${HOME}/.profile"
