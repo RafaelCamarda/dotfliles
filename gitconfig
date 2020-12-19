@@ -23,7 +23,17 @@ lg = "log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgr
 
 [core]
 editor = vi
+	excludesfile = /home/rafael/.gitignore_global
 
 [github]
 user = rafaelcamarda
 email = rf.camarda@gmail.com
+
+[gitlab]
+user = rafacamarda
+email = rafael@brainn.co
+
+[url "git@gitlab.com:"]
+  insteadOf = https://gitlab.com/
+[push]
+	default = current
